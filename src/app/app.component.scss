@@ -4,13 +4,16 @@
 
 .content {
     display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
+    margin: 100px;
     flex-direction: column;
-    max-width: 960px;
     align-items: center;
+    max-width: fit-content;
 }
 
+.cloud {
+    width: auto;
+    height: 400px;
+}
 svg#clouds {
     position: fixed;
     bottom: -160px;

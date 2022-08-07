@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     height: 100px;
-    width: 100%;
+    width: auto;
     display: flex;
     align-items: center;
     background-color: #C8ABA9;
@@ -60,3 +60,28 @@
         height: 50px;
     }
 }
+
+.header-content img {
+    /* Set rules to fill background
+     min-height: 100%;
+     min-width: 1024px; */
+   
+     /* Set up proportionate scaling */
+     width: 100%;
+     height: auto;
+     position: absolute;
+     top: 6.2rem;
+     left: 0;
+     right: 0;
+ 
+     /* Set up positioning */
+     margin: 0;
+     padding: 0;
+ 
+     @media screen and (max-width: 1024px) { /* Specific to this particular image */
+         img.bg {
+           left: 50%;
+           margin-left: -512px;   /* 50% */
+         }
+     }
+ }
