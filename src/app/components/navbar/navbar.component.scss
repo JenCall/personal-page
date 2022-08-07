@@ -1,5 +1,5 @@
 .toolbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -11,12 +11,12 @@
     color: #F0EFE3;
     font-weight: 700;
     font-size: 18px;
+    z-index: 1;
 }
 
 .toolbar span {
     margin-right: 30px;
 }
-
 
 .toolbar img {
     margin: 0 100px 0px 20px;
