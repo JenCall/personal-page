@@ -10,19 +10,21 @@
     background-color: #C8ABA9;
     color: #F0EFE3;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .toolbar span {
     margin-right: 30px;
 }
 
+
 .toolbar img {
     margin: 0 100px 0px 20px;
-    width: 280px;
     height: 60px;
+    width: 280px;
 }
 
+ /* In Case I insert the logos in the navbar
 .toolbar #twitter-logo {
     height: 40px;
     margin: 0 8px;
@@ -36,21 +38,42 @@
 .toolbar #twitter-logo:hover,
 .toolbar #youtube-logo:hover {
     opacity: 0.8;
-}
+} */
 
 .spacer {
     flex: 1;
 }
 
-  /* Responsive Styles */
-@media screen and (max-width: 767px) {
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
     .toolbar {
+        font-size: 16px;
+    }
+
+    .toolbar img {
         display: flex;
         align-items: center;
-        background-color: #C8ABA9;
-        color: #F0EFE3;
-        font-weight: 700;
-        font-size: 14px;
+        margin: 0 20px;
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .toolbar {
+        padding: 8px ;
+        font-size: 16px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .toolbar .nav-options {
+        padding-bottom: 13px;
+        margin-left: 10%;
+    }
+
+    .spacer {
+        flex: 0.5;
     }
 
     .toolbar img {
@@ -61,11 +84,7 @@
     }
 }
 
-.header-content img {
-    /* Set rules to fill background
-     min-height: 100%;
-     min-width: 1024px; */
-   
+.header-content img {   
      /* Set up proportionate scaling */
      width: 100%;
      height: auto;
@@ -78,10 +97,17 @@
      margin: 0;
      padding: 0;
  
-     @media screen and (max-width: 1024px) { /* Specific to this particular image */
-         img.bg {
+    @media screen and (max-width: 1024px) { /* Specific to this particular image */
+         img {
            left: 50%;
            margin-left: -512px;   /* 50% */
-         }
-     }
- }
+        }
+    }
+
+    @media (max-width: 690px) {
+        img {
+            left: 50%;
+            margin-left: -512px;   /* 50% */
+       }
+   }
+}
