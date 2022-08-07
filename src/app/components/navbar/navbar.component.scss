@@ -1,0 +1,61 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #C8ABA9;
+    color: #F0EFE3;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.toolbar span {
+    margin-right: 30px;
+}
+
+.toolbar img {
+    margin: 0 100px 0px 20px;
+    width: 280px;
+    height: 60px;
+}
+
+.toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+    opacity: 0.8;
+}
+
+.spacer {
+    flex: 1;
+}
+
+  /* Responsive Styles */
+@media screen and (max-width: 767px) {
+    .toolbar {
+        display: flex;
+        align-items: center;
+        background-color: #C8ABA9;
+        color: #F0EFE3;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .toolbar img {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+    }
+}
