@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
 h1 {
     margin-right: 20px;
     font-size: 44px;
@@ -18,7 +20,7 @@ h1 {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 0 80px;
+    padding: 0 80px 0 0;
 }  
 
 .flex-child-left .small {
@@ -27,12 +29,13 @@ h1 {
 
 .flex-child-right {
     align-items: center;
-    padding: 0 80px;
+    text-align: left;
+    padding: 0 0 0 80px;
+    color: #070707;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
-}  
-
-.flex-child:first-child {
-    margin-right: 20px;
+    letter-spacing: 0.7px;
+    line-height: 27px;
 }  
 
 /* Responsive Styles */
@@ -47,11 +50,15 @@ h1 {
     .flex-child-left {
         display: inline;
         border: none;
+        padding: 0;
     } 
 
     .flex-child-left .small {
         display: flex;
         font-size: 32px;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
     }
 
     .flex-child-left .big {
