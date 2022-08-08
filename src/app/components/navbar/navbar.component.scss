@@ -24,6 +24,58 @@
     width: 280px;
 }
 
+.spacer {
+    flex: 1;
+}
+
+.header-content img {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+    .toolbar {
+        font-size: 16px;
+    }
+
+    .toolbar img {
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+        width: 200px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .toolbar {
+        font-size: 16px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .toolbar .nav-options {
+        padding-bottom: 13px;
+        margin-left: 10%;
+    }
+
+    .spacer {
+        flex: 0.4;
+    }
+
+    .toolbar img {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 45px;
+    }
+}
+
  /* In Case I insert the logos in the navbar
 .toolbar #twitter-logo {
     height: 40px;
@@ -39,75 +91,3 @@
 .toolbar #youtube-logo:hover {
     opacity: 0.8;
 } */
-
-.spacer {
-    flex: 1;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 800px) {
-    .toolbar {
-        font-size: 16px;
-    }
-
-    .toolbar img {
-        display: flex;
-        align-items: center;
-        margin: 0 20px;
-        width: 200px;
-        height: 50px;
-    }
-}
-
-@media screen and (max-width: 690px) {
-    .toolbar {
-        padding: 8px ;
-        font-size: 16px;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .toolbar .nav-options {
-        padding-bottom: 13px;
-        margin-left: 10%;
-    }
-
-    .spacer {
-        flex: 0.5;
-    }
-
-    .toolbar img {
-        display: flex;
-        align-items: center;
-        width: 200px;
-        height: 50px;
-    }
-}
-
-.header-content img {   
-     /* Set up proportionate scaling */
-     width: 100%;
-     height: auto;
-     position: absolute;
-     top: 6.2rem;
-     left: 0;
-     right: 0;
- 
-     /* Set up positioning */
-     margin: 0;
-     padding: 0;
- 
-    @media screen and (max-width: 1024px) { /* Specific to this particular image */
-         img {
-           left: 50%;
-           margin-left: -512px;   /* 50% */
-        }
-    }
-
-    @media (max-width: 690px) {
-        img {
-            left: 50%;
-            margin-left: -512px;   /* 50% */
-       }
-   }
-}
