@@ -1,6 +1,20 @@
+
 h1 {
     font-size: 44px;
     color: #C8ABA9;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    
+}
+
+.image-container img {
+    border-radius: 8px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 969px) {
