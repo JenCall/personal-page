@@ -116,6 +116,15 @@ a:hover {
     color: #7A4495;
 }
 
+
+.display-below {
+    display: none;
+}
+
+.display-above {
+    display: flex;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 969px) {
     h1 {
@@ -128,6 +137,10 @@ a:hover {
 
     .float-child {
         margin-top: 48px;
+    }
+
+    .display-below {
+        display: none;
     }
 }    
   @media screen and (max-width: 767px) {
