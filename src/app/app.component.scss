@@ -12,8 +12,10 @@
 
 .cloud {
     width: auto;
-    height: 400px;
+    height: 150px;
+    overflow: hidden;
 }
+
 svg#clouds {
     position: fixed;
     bottom: -160px;
