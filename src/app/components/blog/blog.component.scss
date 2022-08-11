@@ -116,13 +116,8 @@ a:hover {
     color: #7A4495;
 }
 
-
-.display-below {
-    display: none;
-}
-
 .display-above {
-    display: flex;
+    display: none;
 }
 
 /* Responsive Styles */
@@ -139,7 +134,7 @@ a:hover {
         margin-top: 48px;
     }
 
-    .display-below {
+    .display-above {
         display: none;
     }
 }    
@@ -156,5 +151,13 @@ a:hover {
 
     .card.highlight-card span {
       margin-left: 72px;
+    }
+
+    .display-below {
+        display: none;
+    }
+
+    .display-above {
+        display: flex;
     }
 }
