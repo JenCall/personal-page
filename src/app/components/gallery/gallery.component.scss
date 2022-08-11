@@ -26,6 +26,11 @@ h1 {
     object-fit: cover;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 969px) {
     h1 {
         font-size: 32px;
