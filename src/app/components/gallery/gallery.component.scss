@@ -13,6 +13,12 @@ h1 {
     overflow: hidden;
 }
 
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
 .image-container img {
     border-radius: 8px;
     width: 500px;
