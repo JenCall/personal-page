@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+interface carouselImages {
+  imageSrc: string;
+  imageAlt: string;
+}
 
 @Component({
   selector: 'app-gallery',
@@ -6,4 +11,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
+
+  @Input() images: carouselImages[] = []
+
+  selectedIndex = 0;
+
 }
