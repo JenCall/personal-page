@@ -1,6 +1,13 @@
 
     <h1 class="title">MY GALLERY</h1>
 
+    <div *ngIf="images && images.length > 0" class="carousel-container">
+        <img *ngFor="let image of images; let i=index"
+        [src]="image.imageSrc" [alt]="image.imageAlt"
+        [ngClass]="{'image-active': selectedIndex === i}"
+        >
+    </div>
+
     <div class="carousel">
         <div class="image-container" id="imgs">
             <img src="../../../assets/carrousel-img-1.png"
