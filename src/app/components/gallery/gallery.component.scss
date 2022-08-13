@@ -10,6 +10,17 @@ h1 {
     margin-top: 70px;
 }
 
+.carousel-container {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px #dce1e1;
+}
+
+    
+
 .carousel {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     height: 530px;
