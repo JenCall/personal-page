@@ -13,6 +13,7 @@ interface carouselImages {
 export class GalleryComponent {
 
   @Input() images: carouselImages[] = []
+  @Input() indicators = true;
 
   selectedIndex = 0;
 
