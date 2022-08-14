@@ -1,40 +1,20 @@
 
-    <h1 class="title">MY GALLERY</h1>
+<h1 class="title">MY GALLERY</h1>
 
-    <div *ngIf="images && images.length > 0" class="carousel-container">
-        <img *ngFor="let image of images; let i=index"
-        [src]="image.imageSrc" [alt]="image.imageAlt"
-        [ngClass]="{'image-active': selectedIndex === i}"
-        class="fade"
+<div *ngIf="images && images.length > 0" class="carousel-container">
+    <img *ngFor="let image of images; let i=index"
+    [src]="image.imageSrc" [alt]="image.imageAlt"
+    [ngClass]="{'image-active': selectedIndex === i}"
+    class="fade"
+    >
+
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of images; let i=index" 
+            class="dot"
+            [ngClass]="{'active': selectedIndex === i}"
+            (click)="selectImage(i)"
         >
-
-        <div *ngIf="indicators" class="carousel-dot-container">
-            <span *ngFor="let dot of images; let i=index" 
-                class="dot"
-                [ngClass]="{'active': selectedIndex === i}"
-                (click)="selectImage(i)"
-            >
-            </span>
-        </div>
+        </span>
     </div>
+</div>
 
-    <div class="carousel">
-        <div class="image-container" id="imgs">
-            <img src="../../../assets/carrousel-img-1.png"
-            alt="first-image"
-            />
-            <img
-            src="../../../assets/carrousel-img-2.png"
-            alt="second-image"
-            />
-            <img
-            src="../../../assets/carrousel-img-3.png"
-            alt="third-image"
-            />
-        </div>
-
-        <div class="buttons-container">
-            <button id="left" class="btn">Prev</button>
-            <button id="right" class="btn">Next</button>
-        </div>
-    </div>
