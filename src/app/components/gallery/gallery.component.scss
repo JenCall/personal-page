@@ -30,6 +30,17 @@ h1 {
     height: 500px;
 } 
 
+.carousel-dot-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
 .dot {
     cursor: pointer;
     height: 13px;
@@ -42,15 +53,9 @@ h1 {
     opacity: 0.5;
 }
 
-.carousel-dot-container {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin-bottom: 1 rem;
+.active,
+.dot:hover {
+    opacity: 1;
 }
 
 .carousel {

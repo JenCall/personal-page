@@ -11,6 +11,7 @@
             <span *ngFor="let dot of images; let i=index" 
                 class="dot"
                 [ngClass]="{'active': selectedIndex === i}"
+                (click)="selectImage(i)"
             >
             </span>
         </div>
