@@ -17,4 +17,11 @@ export class GalleryComponent {
 
   selectedIndex = 0;
 
+  ngOnInit(): void {
+  }
+
+  selectImage(index: number): void {
+    this.selectedIndex = index;
+  }
+
 }
