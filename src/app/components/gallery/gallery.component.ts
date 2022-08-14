@@ -25,4 +25,12 @@ export class GalleryComponent {
     this.selectedIndex = index;
   }
 
+  onPrevClick(): void {
+    if(this.selectedIndex === 0) {
+      this.selectedIndex = this.images.length - 1;
+    } else {
+      this.selectedIndex--;
+    }
+  }
+
 }
