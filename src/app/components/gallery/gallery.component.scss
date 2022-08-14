@@ -120,28 +120,44 @@ h1 {
     h1 {
         font-size: 32px;
     }
+
+    .carousel-container {
+        width: 400px;
+    }
+
+    .carousel-container img {
+        width: 400px;
+    }
+
+    .carousel-container img.image-active {
+        height: 400px;
+    } 
 }
 
 @media screen and (max-width: 690px) {
-    .carousel {
-        height: 430px;
-        width: 400px;
+    .carousel-container {
+        width: 350px;
     }
 
-    .image-container img {
-        width: 400px;
-        height: 400px;
+    .carousel-container img {
+        width: 350px;
     }
+
+    .carousel-container img.image-active {
+        height: 350px;
+    } 
 }
 
 @media screen and (max-width: 445px) {
-    .carousel {
-        height: 330px;
+    .carousel-container {
         width: 300px;
     }
 
-    .image-container img {
+    .carousel-container img {
         width: 300px;
-        height: 300px;
     }
+
+    .carousel-container img.image-active {
+        height: 300px;
+    } 
 }
