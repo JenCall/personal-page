@@ -14,6 +14,7 @@ export class GalleryComponent {
 
   @Input() images: carouselImages[] = []
   @Input() indicators = true;
+  @Input() controls = true;
 
   selectedIndex = 0;
 
