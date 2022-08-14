@@ -15,10 +15,21 @@ export class GalleryComponent {
   @Input() images: carouselImages[] = []
   @Input() indicators = true;
   @Input() controls = true;
+  @Input() autoSlide = false;
+  @Input()  slideInterval = 4000;
 
   selectedIndex = 0;
 
   ngOnInit(): void {
+    if(this.autoSlide) {
+      this.autoSlideImages();
+    }
+  }
+
+  autoSlideImages(): void {
+    setInterval(() => {
+      this.onNextClick();
+    }, this.slideInterval);
   }
 
   selectImage(index: number): void {
