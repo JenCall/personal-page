@@ -23,6 +23,16 @@ export class AppComponent {
       imageSrc:
       '../assets/carrousel-img-3.png',
       imageAlt: 'third-image'
+    },
+    {
+      imageSrc:
+      '../assets/carrousel-img-4.png',
+      imageAlt: 'third-image'
+    },
+    {
+      imageSrc:
+      '../assets/carrousel-img-5.png',
+      imageAlt: 'third-image'
     }
   ]
 }
